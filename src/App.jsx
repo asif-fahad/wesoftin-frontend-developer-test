@@ -1,11 +1,10 @@
 import { useDispatch } from 'react-redux'
 import './App.css'
-import UsersList from './components/UsersList/UsersList'
 import { useEffect } from 'react';
 import { setUsers } from './redux/features/users/usersSlice';
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer';
 import { Outlet, ScrollRestoration } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
