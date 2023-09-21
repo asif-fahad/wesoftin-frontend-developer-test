@@ -18,7 +18,7 @@ const UserDetails = () => {
     const { name, email, image, details, skills, experience, country } = detailsUser;
 
     return (
-        <div className="w-72 md:w-4/12  mx-auto bg-gradient-to-r from-gray-300 to-slate-400 shadow-lg rounded-lg overflow-hidden mb-4">
+        <div className="w-72 md:w-5/12 lg:w-4/12  mx-auto bg-gradient-to-r from-gray-300 to-slate-400 shadow-lg rounded-lg overflow-hidden mb-4">
             <div className="flex justify-center pt-4">
                 <img className="w-32 h-32 object-cover rounded-full" src={image} alt={name} />
             </div>

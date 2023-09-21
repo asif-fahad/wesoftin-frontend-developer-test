@@ -9,7 +9,7 @@ const UsersList = () => {
 
 
     return (
-        <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-5">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">
             {users?.map(user => (
                 <div key={user.id}>
                     <div className="w-8/12 mx-auto bg-gradient-to-r from-gray-300 to-slate-400 shadow-lg rounded-lg overflow-hidden">
