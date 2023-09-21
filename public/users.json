@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "image": "https://randomuser.me/api/portraits/men/57.jpg",
+        "details": "Experienced full-stack developer with expertise in JavaScript ecosystem.",
+        "skills": [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "HTML",
+            "CSS"
+        ],
+        "experience": "5 years",
+        "country": "USA"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "image": "https://randomuser.me/api/portraits/women/79.jpg",
+        "details": "Python developer with strong skills in Django framework and database management.",
+        "skills": [
+            "Python",
+            "Django",
+            "SQL",
+            "HTML",
+            "CSS"
+        ],
+        "experience": "4 years",
+        "country": "Canada"
+    },
+    {
+        "id": 3,
+        "name": "Bob Johnson",
+        "email": "bob.johnson@example.com",
+        "image": "https://randomuser.me/api/portraits/men/63.jpg",
+        "details": "Java developer with extensive knowledge in Spring Boot and Hibernate ORM.",
+        "skills": [
+            "Java",
+            "Spring Boot",
+            "Hibernate",
+            "MySQL"
+        ],
+        "experience": "6 years",
+        "country": "UK"
+    },
+    {
+        "id": 4,
+        "name": "Alice Williams",
+        "email": "alice.williams@example.com",
+        "image": "https://randomuser.me/api/portraits/women/40.jpg",
+        "details": ".NET developer specializing in C# and ASP.NET framework.",
+        "skills": [
+            "C#",
+            ".NET Core",
+            "SQL Server",
+            "ASP.NET"
+        ],
+        "experience": "3 years",
+        "country": "Australia"
+    },
+    {
+        "id": 5,
+        "name": "Michael Brown",
+        "email": "michael.brown@example.com",
+        "image": "https://randomuser.me/api/portraits/men/78.jpg",
+        "details": "Ruby on Rails developer with proficiency in database management.",
+        "skills": [
+            "Ruby",
+            "Rails",
+            "PostgreSQL",
+            "HTML",
+            "CSS"
+        ],
+        "experience": "4 years",
+        "country": "Germany"
+    },
+    {
+        "id": 6,
+        "name": "Emily Davis",
+        "email": "emily.davis@example.com",
+        "image": "https://randomuser.me/api/portraits/women/80.jpg",
+        "details": "Frontend developer specializing in React and UI/UX design.",
+        "skills": [
+            "JavaScript",
+            "React",
+            "HTML",
+            "CSS",
+            "UI/UX Design"
+        ],
+        "experience": "2 years",
+        "country": "USA"
+    }
+]
