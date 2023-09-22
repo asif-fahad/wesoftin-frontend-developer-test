@@ -20,7 +20,7 @@ const UsersList = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">
             {users?.map(user => (
                 <div key={user.id}>
-                    <div className="w-8/12 mx-auto bg-gradient-to-r from-gray-300 to-slate-400 shadow-lg rounded-lg overflow-hidden">
+                    <div className="w-8/12 mx-auto bg-gradient-to-r from-gray-300 to-slate-400 shadow-xl shadow-zinc-400 rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 border hover:border-blue-700">
                         <div className="flex justify-center">
                             <img className="w-32 h-32 object-cover mt-10 rounded-full" src={user.image} alt="John Doe" />
                         </div>
