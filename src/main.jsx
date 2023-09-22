@@ -7,12 +7,17 @@ import {
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
 import router from './routes/routes';
+import ContextProviders from './providers/ContextProviders';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <ContextProviders>
+
+        <RouterProvider router={router} />
+
+      </ContextProviders>
     </Provider>
   </React.StrictMode>,
 )

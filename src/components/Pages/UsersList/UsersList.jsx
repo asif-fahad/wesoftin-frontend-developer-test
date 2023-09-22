@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
+import { MyContext } from '../../../providers/ContextProviders';
 
 const UsersList = () => {
-    const { users } = useSelector((state) => state.userReducer);
+    // const { users } = useSelector((state) => state.userReducer);
+
+    const { users } = useContext(MyContext);
+
+    if (!users) {
+        return <LoadingSpinner></LoadingSpinner>
+    }
+
 
     // console.log(users);
 

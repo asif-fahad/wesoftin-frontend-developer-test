@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react'
-import { useLoaderData, useParams } from 'react-router-dom';
+import React, { useContext } from 'react'
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { MyContext } from '../../../providers/ContextProviders';
+import LoadingSpinner from '../../Reuseable/LoadingSpinner';
 
 const UserDetails = () => {
     const { id } = useParams()
 
-    // console.log(id)
-    const [detailsUser, setDetailsUser] = useState([]);
+    const { users } = useContext(MyContext);
 
-    useEffect(() => {
-        fetch(`/users.json`)
-            .then(res => res.json())
-            .then(data => setDetailsUser(data.find(d => d.id == id)))
-    }, [])
+    // console.log(users);
 
-    // console.log(details);
+    const user = users.find(user => user.id == id)
 
-    const { name, email, image, details, skills, experience, country } = detailsUser;
+    if (!user) {
+        return <LoadingSpinner></LoadingSpinner>
+    }
+
+    const { name, email, image, details, skills, experience, country } = user;
 
     return (
         <div className="w-72 md:w-5/12 lg:w-4/12  mx-auto bg-gradient-to-r from-gray-300 to-slate-400 shadow-lg rounded-lg overflow-hidden mb-4">
