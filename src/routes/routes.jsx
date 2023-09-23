@@ -1,16 +1,17 @@
-import { Link, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import UsersList from "../components/Pages/UsersList/UsersList";
-import UserDetails from "../components/Pages/UserDetails/UserDetails";
+import UsersList from "../pages/Users/UsersList";
+import UserDetails from "../pages/Users/UserDetails";
+import About from "../pages/About/About";
+import Services from "../pages/Services/Services";
+import Contact from "../pages/Contact/Contact";
+import ErrorPage from "../components/Shared/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App></App>,
-        errorElement: <div className="flex flex-col justify-center">
-            <h1 className="text-5xl font-bold">Error 404</h1>
-            <Link to='/'><button className="p-2 border-white bg bg-red-500 text-white rounded-md">Return to Home</button></Link>
-        </div>,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/',
@@ -22,15 +23,15 @@ const router = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <h1 className="text-center text-5xl font-bold">About</h1>,
+                element: <About></About>,
             },
             {
                 path: '/services',
-                element: <h1 className="text-center text-5xl font-bold">Services</h1>,
+                element: <Services></Services>,
             },
             {
                 path: '/contact',
-                element: <h1 className="text-center text-5xl font-bold">Contact</h1>,
+                element: <Contact></Contact>
             },
         ],
     },

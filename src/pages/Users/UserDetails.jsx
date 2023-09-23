@@ -1,8 +1,7 @@
 import React, { useContext } from 'react'
-import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
-import { MyContext } from '../../../providers/ContextProviders';
-import LoadingSpinner from '../../Reuseable/LoadingSpinner';
+import LoadingSpinner from '../../components/Reuseable/LoadingSpinner';
+import { MyContext } from '../../providers/ContextProviders';
 
 const UserDetails = () => {
     const { id } = useParams()

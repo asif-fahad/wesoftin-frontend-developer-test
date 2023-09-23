@@ -1,20 +1,16 @@
 import React, { useContext } from 'react'
-import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { MyContext } from '../../../providers/ContextProviders';
+import { MyContext } from '../../providers/ContextProviders';
+import LoadingSpinner from '../../components/Reuseable/LoadingSpinner';
 
 const UsersList = () => {
-    // const { users } = useSelector((state) => state.userReducer);
-
     const { users } = useContext(MyContext);
+
+    // console.log(users);
 
     if (!users) {
         return <LoadingSpinner></LoadingSpinner>
     }
-
-
-    // console.log(users);
-
 
     return (
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">

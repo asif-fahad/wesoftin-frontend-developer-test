@@ -1,4 +1,4 @@
-import React, { createContext, useEffect } from 'react'
+import React, { createContext } from 'react'
 import { useSelector } from 'react-redux';
 
 export const MyContext = createContext(null);

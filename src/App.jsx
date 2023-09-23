@@ -11,7 +11,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch('/users.json')
+    fetch('/data/users.json')
       .then(res => res.json())
       .then(data => dispatch(setUsers(data)))
   }, [])
